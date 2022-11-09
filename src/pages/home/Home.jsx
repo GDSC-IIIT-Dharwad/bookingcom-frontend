@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import HomeCss from './home.css';
 function Home() {
   return (
@@ -16,6 +17,17 @@ function Home() {
    <h4>Check one more</h4>
     <h4>dedtination off your wishlist </h4>
     <button class="white"> Explore Deals </button>
+=======
+import Explorearround from './explorearround'
+import Slider from './Slider_Component/Slider'
+import Searchbar from './Search_Component/Searchbar'
+
+function Home() {
+  return <div>
+    <Slider />
+    <Searchbar/>
+    <Explorearround />
+>>>>>>> 023016c432abd1ad95a06f359847111e9a9bf737
   </div>
 
 

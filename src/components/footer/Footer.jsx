@@ -1,5 +1,6 @@
 import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from "react-icons/bs";
 import "./Footer.css";
+import React from "react"
 
 function Footer() {
   return (
@@ -12,7 +13,7 @@ function Footer() {
           <i>Sign Up and you will never miss on any offer</i>
         </p>
         <form action="">
-          <input type="text" placeholder="email address..." />
+          <input type="text" placeholder="Your Email" />
           <button>Register</button>
         </form>
       </div>
@@ -21,20 +22,20 @@ function Footer() {
         <hr />
         <ul>
           <li>
-            <a href="#"> Your Account </a>
+            <a href="/"> Your Account </a>
           </li>
 
           <li>
-            <a href="#">Make change online to your booking</a>
+            <a href="/">Make change online to your booking</a>
           </li>
           <li>
-            <a href="#">Booking History</a>
+            <a href="/">Booking History</a>
           </li>
           <li>
-            <a href="#">Cancel Booking</a>
+            <a href="/">Cancel Booking</a>
           </li>
           <li>
-            <a href="#">Costumer Help</a>
+            <a href="/">Costumer Help</a>
           </li>
         </ul>
       </div>
@@ -67,7 +68,7 @@ function Footer() {
         <p>© Copyright Booking.com. All rights reserved</p>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
