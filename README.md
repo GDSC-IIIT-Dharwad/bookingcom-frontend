@@ -38,7 +38,7 @@ Start the server
 
 Contributions are always welcome!
 
-See `CONTRIBUTING.md` for ways to get started.
+See `CONTRIBUTING.md` for ways to get started - [here](https://github.com/GDSC-IIIT-Dharwad/bookingcom-frontend/blob/main/CONTRIBUTING.md)
 
 ## Tech Stack
 
