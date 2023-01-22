@@ -6,7 +6,7 @@ IMPORTANT - Whenever you complete any task assigned to you, make sure to fill th
 
 Refer to the official docs to create a pull request - [GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
-## Formatting
+## Code Style | Formatting
 
 Consistency is very crucial in any project. That is, having consistent formatting
 throughout is important for so many reasons.
@@ -26,6 +26,18 @@ Before making any changes to the codebase, it is important to make sure that you
 
 A clear and concise commit message is important for maintaining the project's history and making it easier for others to understand the changes that were made. It is a good practice to prefix the commit message with the type of change, for example, `feat:` for a new feature, `fix:` for a bug fix, and `docs:` for documentation changes.
 For example, a commit message for a bug fix could be `fix: resolved issue with login functionality` and for a new feature, it could be `feat: added new dashboard to track user data`.
+
+### Branch naming
+
+It is a good practice to name the branch that you are working on with a descriptive name that is related to the changes that you are making. For example, if you are working on a new feature, you could name the branch `feature/new-dashboard` or if you are fixing a bug, you could name the branch `bugfix/login-error`.
+
+### Variable naming
+
+It is important to use descriptive names for variables, functions, and other identifiers. This makes it easier to understand the code and to find and fix bugs. It is also a good practice to use camelCase for variable names and PascalCase for component names.
+
+### Comments
+
+Comments are important for explaining the code and for making it easier to understand. It is a good practice to add comments to explain the purpose of the code and to add comments to explain any complex logic. It is also a good practice to add comments to explain any workarounds or hacks that were used to fix bugs or to implement a specific feature.s
 
 ### Folder structure
 
