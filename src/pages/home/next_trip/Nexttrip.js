@@ -1,15 +1,14 @@
 import React from 'react'
-import Nexttripcards from './Nexttripcards';
-import { AiOutlineDoubleLeft,AiOutlineDoubleRight } from "react-icons/ai";
-import {nexttripData} from "./Nexttripdata"
-import "./Nexttrip.css";
-function Next_trip() {
+import Nexttripcards from './Nexttripcards'
+import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from 'react-icons/ai'
+import { nexttripData } from './Nexttripdata'
+import './Nexttrip.css'
+function Next_trip () {
+  const slide = (shift) => {
+    const slider = document.getElementById('slider')
+    slider.scrollLeft = slider.scrollLeft + shift
+  }
 
-const slide = (shift)=>{
-  var slider=document.getElementById("slider")
-  slider.scrollLeft=slider.scrollLeft+shift;
-}
-  
   return (
     <div>
       <div className="heading">Get Inspired your next trip</div>

@@ -1,7 +1,6 @@
 import React from 'react'
-import "./Nexttrip.css";
-function Nexttripcards(props) {
-
+import './Nexttrip.css'
+function Nexttripcards (props) {
   return (
     <div className='card'>
       <div className="img_area">
