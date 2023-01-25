@@ -12,7 +12,7 @@ function Footer() {
         <p>
           <i>Sign Up and you will never miss on any offer</i>
         </p>
-        <form action="">
+        <form className="main" action="">
           <input type="text" placeholder="Your Email" />
           <button>Register</button>
         </form>
@@ -54,7 +54,7 @@ function Footer() {
             <BsYoutube size="40" />
           </li>
         </ul>
-        <ul>
+        <ul className="last">
           <li>About</li>
           <li>Need Help?</li>
           <li>Contact</li>
