@@ -48,9 +48,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 30px;
+    margin: 0 40px;
     min-width: 10rem;
     flex-wrap: wrap;
+    position: absolute;
+    
 
 }
 
@@ -63,6 +65,7 @@
 .total_search-location{
   display: flex;
   align-items: center;
+  
 }
 
 
@@ -75,7 +78,9 @@
 .total_search-date-range{
   display: flex;
   align-items: center;
+  
 }
+
 .hotel_icon{
   width: 30px;
   height: 30px;
@@ -85,6 +90,7 @@
 .total_dropdown{
   display: flex;
   align-items: center;
+
 }
 
 
