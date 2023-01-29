@@ -12,7 +12,7 @@ function App () {
   }, [])
 
   return (
-    <div className="">
+    <div className="exp">
       <h1 className='why'>Explore Around</h1>
       <h1 className='bro'>These popular desitination has a lot to offer</h1>
       <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
