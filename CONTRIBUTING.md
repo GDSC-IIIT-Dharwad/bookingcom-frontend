@@ -22,6 +22,10 @@ Read more at [Prettier Docs](https://www.digitalocean.com/community/tutorials/ho
 
 Before making any changes to the codebase, it is important to make sure that you have the latest version of the code. This can be done by running the command `git pull origin main` to ensure that you have the latest updates from the remote repository. This will help prevent conflicts with other contributions and ensure that your changes are based on the most recent version of the code.
 
+### PR Description
+
+It is important to provide a clear and concise description of the changes that you are making. This makes it easier for others to understand the changes that you are making and to review your code. It is also a good practice to add screenshots in the description to show the changes that you are making.
+
 ### Commit message
 
 A clear and concise commit message is important for maintaining the project's history and making it easier for others to understand the changes that were made. It is a good practice to prefix the commit message with the type of change, for example, `feat:` for a new feature, `fix:` for a bug fix, and `docs:` for documentation changes.
