@@ -1,6 +1,8 @@
-
+*{
+    text-decoration: none;
+}
 .navbar{
-    position:absolute;
+    position:relative;
     display:grid;
     grid-template-rows: 1fr 1fr;
     top: 0;
