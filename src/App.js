@@ -21,7 +21,8 @@ function App() {
             </>
           }
         ></Route>
-        <Route path="/stays" element={<HotelPage/>}></Route>
+        <Route path="/stays" element={<HotelPage/>
+      }></Route>
       </Routes>
       <Footer/>
     </Router>
