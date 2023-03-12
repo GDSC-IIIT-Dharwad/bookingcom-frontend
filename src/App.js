@@ -4,7 +4,6 @@ import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HotelPage from './pages/hotelList/HotelPage'
-
 import './index.css'
 
 function App() {

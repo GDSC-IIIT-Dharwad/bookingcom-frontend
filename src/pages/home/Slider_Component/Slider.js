@@ -20,7 +20,7 @@ const Slider = () => {
     setCurrentSlide(currentSlide === 0 ? slideLenght - 1 : currentSlide - 1)
   }
 
-  function auto () {
+  function auto() {
     slideInterval = setInterval(nextSlide, intervalTime)
   }
 
@@ -36,27 +36,37 @@ const Slider = () => {
   }, [currentSlide])
 
   return (
-    <div className='slider'>
-        <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide}/>
-        <AiOutlineArrowRight className="arrow next" onClick={nextSlide}/>
-
+    <div className="slider">
+      <div className="cnt">
+        <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide} />
         {sliderData.map((slide, index) => {
           return (
-                <div className={index === currentSlide ? 'slide current' : 'slide'} key={index}>
-                    {index === currentSlide && (
-                        <>
-                        <img src={slide.image} alt="Img not found" className='image'/>
-                        <div className="content">
-                            <p className='content1'>{slide.available_time}</p>
-                            <h2 className='content2'>{slide.heading}</h2>
-                            <p className='content3'>{slide.more_option}</p>
-                            <button className='--btn'>Explore More</button>
-                        </div>
-                        </>
-                    )}
-                </div>
+            <div
+              className={index === currentSlide ? 'slide current' : 'slide'}
+              key={index}
+            >
+              {index === currentSlide && (
+                <>
+                  <img
+                    src={slide.image}
+                    alt="Img not found"
+                    className="image"
+                  />
+                  <div className="content-main">
+                    <div className="content">
+                      <p className="content1">{slide.available_time}</p>
+                      <h2 className="content2">{slide.heading}</h2>
+                      <p className="content3">{slide.more_option}</p>
+                      <button className="--btn">Explore More</button>
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
           )
         })}
+        <AiOutlineArrowRight className="arrow next" onClick={nextSlide} />
+      </div>
     </div>
   )
 }

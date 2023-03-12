@@ -2,8 +2,6 @@
     margin-top:3rem;
     margin-bottom:3rem;
     position:relative;
-    height:35rem;
-    min-height:30rem;
 }
 
 h1{
@@ -13,23 +11,18 @@ h1{
 }
 
 .images-container {
-    padding-left:2%;
-    padding-right:2%;
+    padding:3rem 2% 0 2%;
     display:flex;
-    /* position:relative; */
+    gap:2rem;
     flex-wrap: wrap;
-    /* min-width: 100%; */
-    /* grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr); */
-    height:30rem;
     min-height:25rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }   
 
 .card1{
     border-radius:1.5rem;
-    width:23%;
-    height:45%;
+    width:20rem;
+    height:14rem;
     position:relative;
     overflow:hidden;
     margin:0;
@@ -57,10 +50,11 @@ h1{
     align-items: center;
     justify-content:center;
     height:3rem;
-    transition:height 0.4s ease-in-out;
+    transition:height 0.4s ease-in-out,color 0.4s;
     cursor: pointer;
 }
 .text:hover{
     height:100%;
-    transition:height 0.4s ease-in-out;
+    transition:height 0.4s ease-in-out,color 0.4s;
+    color:rgb(247, 244, 244);
 }

@@ -7,10 +7,10 @@ function Footer() {
     <footer>
       <div className="top">
         <h1>
-          <i>Save Time, Save Money</i>
+          Save Time, Save Money
         </h1>
         <p>
-          <i>Sign Up and you will never miss on any offer</i>
+          Sign Up and you will never miss on any offer
         </p>
         <form action="">
           <input type="text" placeholder="Your Email" />
