@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HotelListCard from './HotelListCard'
 import './HotelPage.css'
 import {hotelListCardData} from './hotelListCardData'
+import { BeatLoader } from 'react-spinners';
 
 function HotelPage() {
+
+  const [loading,setloading]=useState(false);
+  useEffect(()=>{
+    setloading(true)
+    setTimeout(()=>{
+      setloading(false)
+    },2000)
+  },[])
+
   return (
-    <div className="main-page">
+    <>
+    {
+      loading?
+      <div className="beatload"><BeatLoader  color={'black'}/></div>
+      :
+      <div className="main-page">
       <div className="HotelPage">
         <div className="search">Search</div>
 
@@ -65,6 +80,9 @@ function HotelPage() {
         }
       </div>
     </div>
+}
+    </>
+    
   )
 }
 
