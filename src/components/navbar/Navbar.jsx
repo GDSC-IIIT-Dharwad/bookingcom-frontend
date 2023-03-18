@@ -3,6 +3,7 @@ import NavbarBottomItems from './NavbarBottomItems'
 import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { BiMenu } from 'react-icons/bi'
 
 function Navbar() {
   return (
@@ -11,8 +12,9 @@ function Navbar() {
         <Link exact to="/">
           <div className="heading">bOOking.com</div>
         </Link>
-        <div className="items">
-          <NavbarTopItems />
+        <NavbarTopItems />
+        <div className="menu">
+          <BiMenu className='icon-menu'/>
         </div>
       </div>
       <div className="navbar-bottom">

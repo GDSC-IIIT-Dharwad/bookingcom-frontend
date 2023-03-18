@@ -1,98 +1,110 @@
-  
-  .App {
-    text-align: center;
-    font-size: 22px;
-  }
-  
-  input.inputBox {
-    font-size: 15px;
-    padding: 5px 8px 4px 8px;
-    border-radius: 10px;
-    border: 1px solid #666;
-    height: 30px;
-    width: 200px;
-  }
-  
-  .calendarWrap {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .calendarElement {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 40px;
-    border: 1px solid #ccc;
-    z-index: 999;
-  }
-
-.search-location{
-    width: 280px;
-    height: 35px;
-    border-radius:5px;
-    /* margin-left: 20px; */
+.App {
+  text-align: center;
+  font-size: 22px;
 }
 
-.search{
-  width:200px;
-  height: 35px;
-
+input.inputBox {
+  font-size: 15px;
+  border: 1px solid #666;
+  height: 30px;
+  width: 280px;
+  border-radius: 7px;
+  padding: 0.5rem 0.8rem;
 }
 
-.main_search{
-    width:95%;
-    border-radius: 4px;
-    height: 100px;
-    background-color: #03396C;
+.calendarWrap {
+  display: inline-block;
+  position: relative;
+}
+
+.calendarElement {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+@media only screen and (min-width: 1000px) {
+  .total_search-location,
+  .total_search-date-range,
+  .total_dropdown,.button-holder{
     display: flex;
-    justify-content: space-around;
+    gap:0.5rem;
     align-items: center;
-    margin: 0 40px;
-    min-width: 10rem;
-    flex-wrap: wrap;
-    position: absolute;
-    
-
+  }
 }
 
-.location-icon{
-  width: 30px;
-  height: 30px;
-  color:white;
+@media only screen and (max-width: 1000px) {
+  .total_search-location,
+  .total_search-date-range,
+  .total_dropdown,.button-holder{
+    display: flex;
+    width:40%;
+    gap:0.5rem;
+    align-items: center;
+  }
+
+  .total_search-date-range,.button-holder{
+    justify-content: flex-end;
+  }  
 }
 
-.total_search-location{
+@media only screen and (max-width: 600px) {
+  .total_search-location,
+  .total_search-date-range,
+  .total_dropdown,.button-holder{
+    display: flex;
+    width: 100%;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.search-location {
+  width: 280px;
+  border-radius: 7px;
+  padding: 0.5rem 0.8rem;
+}
+
+.search-location:focus {
+  outline: none;
+}
+
+.search {
+  width: 200px;
+  height: 35px;
+}
+
+.main_search {
+  width: 100%;
+  border-radius: 4px;
+  padding: 2rem 0rem;
+  gap: 1rem;
+  background-color: #03396c;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  
+  min-width: 10rem;
+  flex-wrap: wrap;
 }
 
-
-.date_icon{
-  width: 30px;
+.location-icon {
+  min-width: 30px;
   height: 30px;
-  color:white;
+  color: white;
 }
 
-.total_search-date-range{
-  display: flex;
-  align-items: center;
-  
-}
-
-.hotel_icon{
-  width: 30px;
+.date_icon {
+  min-width: 30px;
   height: 30px;
-  color:white;
+  color: white;
 }
 
-.total_dropdown{
-  display: flex;
-  align-items: center;
-
+.hotel_icon {
+  min-width: 30px;
+  height: 30px;
+  color: white;
 }
-
-
-
-

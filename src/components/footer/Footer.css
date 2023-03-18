@@ -10,12 +10,12 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  gap:1rem;
   color: white;
-  padding-bottom: 15px;
+  padding:2rem;
 }
 
 .top h1 {
-  margin-bottom: 0;
   font-weight: bold;
 }
 
@@ -27,12 +27,46 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.top form {
-  width: 60%;
-  margin-left: 70px;
+@media only screen and (min-width: 768px){
+  .top form {
+    display:flex;
+    gap:1rem;
+  }
+  .top form input {
+    font-size: 20px;
+    width:20rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-style: italic;
+    padding: 15px 20px;
+    outline: none;
+    background: #efefef;
+  }
 }
 
-.top button {
+@media only screen and (max-width: 768px){
+  .top form {
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+  }
+  .top form input {
+    font-size: 20px;
+    width:100%;
+    border: none;
+    border-radius: 0.7rem;
+    font-style: italic;
+    padding: 15px 20px;
+    outline: none;
+    background: #efefef;
+  }
+  .mid ul li{
+    width:100%;
+    padding:0 2rem;
+  }
+}
+
+.top form button {
   background-color: #fd841f;
   color: white;
   font-style: italic;
@@ -41,24 +75,21 @@
   color: black;
   font-size: 20px;
   padding: 15px 20px;
-  margin-left: 40px;
+  transition: transform 0.4s;
 }
 
-.top form input {
-  font-size: 20px;
-  width: 60%;
-  border: none;
-
-  font-style: italic;
-  padding: 15px 20px;
-  outline: none;
-  background: #efefef;
+.top form button:hover{
+  transform: scale(1.04);
+  transition: transform 0.4s;
 }
+
 
 .mid {
   background-color: #b3cce0;
   font-family: 'Open Sans', sans-serif;
   display: flex;
+  padding:1rem 0;
+  gap:1rem;
   flex-direction: column;
   align-items: center;
 }
@@ -75,7 +106,7 @@
   font-weight: 60;
   opacity: 0.8;
   font-style: italic;
-  margin: 15px auto;
+  width:fit-content;
   border-radius: 20px;
   padding: 10px 15px;
   font-size: 25px;
@@ -84,15 +115,26 @@
 .mid ul {
   font-style: italic;
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
   list-style-type: none;
+  padding:0.5rem;
 }
+
+
 .bottom ul {
   display: flex;
-  gap: 50px;
+  gap: 1rem;
+  flex-wrap:wrap;
   justify-content: center;
   list-style-type: none;
+  padding:1rem 0;
+}
+
+.bottom ul li {
+  padding:0 0.8rem;
+  white-space: nowrap;
 }
 
 .mid a {
@@ -109,9 +151,17 @@
   background-color: black;
   padding: 20px;
   font-size: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bottom p {
   font-size: 16px;
+  width:fit-content;
   color: #b3cce0;
+}
+
+footer{
+  overflow: hidden;
 }

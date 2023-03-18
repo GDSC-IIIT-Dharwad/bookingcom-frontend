@@ -6,7 +6,6 @@ import Searchbar from './Search_Component/Searchbar'
 import { BeatLoader } from 'react-spinners';
 import './Home.css'
 
-
 function Home() {
 
   const [loading,setloading]=useState(false);
